@@ -16,7 +16,7 @@ function sendJokeCount(){
   <label for="numJokes">I would like 
 	<input class="pl-2 w-10 border-b border-orange-500" id="numJokes" type="number" min="1" max="5" bind:value={numJokes}>
 	kick butt {numJokes === 1 ? 'joke' : 'jokes'}!</label>
-	<button class="font-bold border-2 border-orange-500 rounded p-2 ml-1 hover:bg-orange-500 hover:text-white" 
+	<button class="font-bold border-2 border-orange-500 rounded p-2 m-2 hover:bg-orange-500 hover:text-white" 
 	on:click={sendJokeCount}>Get {numJokes} {numJokes === 1 ? 'Joke' : 'Jokes'}
 	</button>
   </form>
